@@ -8,7 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Properties-->
+        <scene sceneID="FvA-FH-zUx">
+            <objects>
+                <viewController title="Properties" id="8Ja-df-p3J" customClass="PropertiesViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K3s-6y-fkS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz1-OO-N38">
+                                <rect key="frame" x="140" y="416" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="59f-vW-qPL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Properties" image="properties" id="06w-Pu-72H"/>
+                    <connections>
+                        <outlet property="propertiesLabel" destination="Hz1-OO-N38" id="bH4-hI-Y0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAN-nj-r55" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1277" y="-1942"/>
+        </scene>
+        <!--New Projects-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="NewProjectsViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,14 +55,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ugK-GQ-57r"/>
+                    <tabBarItem key="tabBarItem" title="New Projects" image="crane" id="ugK-GQ-57r"/>
                     <connections>
                         <outlet property="newProjectsLabel" destination="TEs-lH-tAs" id="Wz1-yW-BWv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1208.3969465648854" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="-2033" y="-1942"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Yk-bV-HWu">
@@ -42,13 +70,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dVP-qE-3F4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eWT-II-X0b">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xFi-T4-EsB"/>
                         <segue destination="xsF-9h-7bQ" kind="relationship" relationship="viewControllers" id="1TD-Ra-z6A"/>
-                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
                         <segue destination="anf-Qh-uEJ" kind="relationship" relationship="viewControllers" id="APk-rB-Gg1"/>
                         <segue destination="0oL-Ld-Diq" kind="relationship" relationship="viewControllers" id="Xfd-oS-ry6"/>
                     </connections>
@@ -57,35 +86,7 @@
             </objects>
             <point key="canvasLocation" x="-685" y="-2713"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="FvA-FH-zUx">
-            <objects>
-                <viewController id="8Ja-df-p3J" customClass="PropertiesViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K3s-6y-fkS">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz1-OO-N38">
-                                <rect key="frame" x="140" y="416" width="114" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="59f-vW-qPL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="06w-Pu-72H"/>
-                    <connections>
-                        <outlet property="propertiesLabel" destination="Hz1-OO-N38" id="bH4-hI-Y0I"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BAN-nj-r55" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1843.5114503816794" y="-1942.2535211267607"/>
-        </scene>
-        <!--Item-->
+        <!--Agents-->
         <scene sceneID="TsW-uv-3H8">
             <objects>
                 <viewController id="xsF-9h-7bQ" customClass="AgentsViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,7 +105,7 @@
                         <viewLayoutGuide key="safeArea" id="EGU-IH-5sd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="EUN-Zn-jTg"/>
+                    <tabBarItem key="tabBarItem" title="Agents" image="agents" id="EUN-Zn-jTg"/>
                     <navigationItem key="navigationItem" id="TAP-Oz-vjO"/>
                     <connections>
                         <outlet property="agentsLabel" destination="Dtl-Ci-0fj" id="SwC-ss-iHM"/>
@@ -114,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="-573.28244274809163" y="-1942.2535211267607"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="vEH-9E-8Pn">
             <objects>
                 <viewController id="anf-Qh-uEJ" customClass="ProfilesViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-nY-tzQ">
-                                <rect key="frame" x="175" y="416" width="49" height="21"/>
+                                <rect key="frame" x="175" y="416" width="87" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -133,7 +134,7 @@
                         <viewLayoutGuide key="safeArea" id="1Z1-vL-NkL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ojH-sV-duu"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="ojH-sV-duu"/>
                     <navigationItem key="navigationItem" id="qUe-H3-DEj"/>
                     <connections>
                         <outlet property="profileLabel" destination="8Iz-nY-tzQ" id="96W-r0-i3S"/>
@@ -141,9 +142,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GX6-WM-WAU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77" y="-1942"/>
+            <point key="canvasLocation" x="75.572519083969468" y="-1942.2535211267607"/>
         </scene>
-        <!--Item-->
+        <!--Menu-->
         <scene sceneID="Qho-jY-v8s">
             <objects>
                 <viewController id="0oL-Ld-Diq" customClass="MenuViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHh-Mv-rhs">
-                                <rect key="frame" x="175" y="416" width="43" height="21"/>
+                                <rect key="frame" x="175" y="416" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -162,7 +163,7 @@
                         <viewLayoutGuide key="safeArea" id="08A-sn-TPg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1y3-MV-rst"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="menu" id="1y3-MV-rst"/>
                     <navigationItem key="navigationItem" id="vtk-Dh-L0j"/>
                     <connections>
                         <outlet property="menuLabel" destination="rHh-Mv-rhs" id="WPd-zW-tD0"/>
@@ -170,10 +171,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uh5-do-cyG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-1942"/>
+            <point key="canvasLocation" x="713.74045801526711" y="-1942.2535211267607"/>
         </scene>
     </scenes>
     <resources>
+        <image name="agents" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="crane" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="menu" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="profile" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="properties" width="18" height="18"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
