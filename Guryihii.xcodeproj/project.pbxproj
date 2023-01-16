@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7929756855009C7A69 /* NewProjectsViewController.swift */; };
+		831A0B7C29756870009C7A69 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7B29756870009C7A69 /* AgentsViewController.swift */; };
+		831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7D29756887009C7A69 /* ProfilesViewController.swift */; };
+		831A0B8029756895009C7A69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7F29756895009C7A69 /* MenuViewController.swift */; };
 		834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06D8296802A4008DECC5 /* AppDelegate.swift */; };
 		834F06DB296802A4008DECC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06DA296802A4008DECC5 /* SceneDelegate.swift */; };
-		834F06DD296802A4008DECC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06DC296802A4008DECC5 /* ViewController.swift */; };
+		834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06DC296802A4008DECC5 /* PropertiesViewController.swift */; };
 		834F06E0296802A4008DECC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F06DE296802A4008DECC5 /* Main.storyboard */; };
 		834F06E2296802A6008DECC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834F06E1296802A6008DECC5 /* Assets.xcassets */; };
 		834F06E5296802A6008DECC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F06E3296802A6008DECC5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831A0B7929756855009C7A69 /* NewProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectsViewController.swift; sourceTree = "<group>"; };
+		831A0B7B29756870009C7A69 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
+		831A0B7D29756887009C7A69 /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
+		831A0B7F29756895009C7A69 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		834F06D5296802A4008DECC5 /* Guryihii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guryihii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834F06D8296802A4008DECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		834F06DA296802A4008DECC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		834F06DC296802A4008DECC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		834F06DC296802A4008DECC5 /* PropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewController.swift; sourceTree = "<group>"; };
 		834F06DF296802A4008DECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		834F06E1296802A6008DECC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834F06E4296802A6008DECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +66,15 @@
 			children = (
 				834F06D8296802A4008DECC5 /* AppDelegate.swift */,
 				834F06DA296802A4008DECC5 /* SceneDelegate.swift */,
-				834F06DC296802A4008DECC5 /* ViewController.swift */,
 				834F06DE296802A4008DECC5 /* Main.storyboard */,
 				834F06E1296802A6008DECC5 /* Assets.xcassets */,
 				834F06E3296802A6008DECC5 /* LaunchScreen.storyboard */,
 				834F06E6296802A6008DECC5 /* Info.plist */,
+				834F06DC296802A4008DECC5 /* PropertiesViewController.swift */,
+				831A0B7929756855009C7A69 /* NewProjectsViewController.swift */,
+				831A0B7B29756870009C7A69 /* AgentsViewController.swift */,
+				831A0B7D29756887009C7A69 /* ProfilesViewController.swift */,
+				831A0B7F29756895009C7A69 /* MenuViewController.swift */,
 			);
 			path = Guryihii;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				834F06DD296802A4008DECC5 /* ViewController.swift in Sources */,
+				834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */,
+				831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */,
+				831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */,
 				834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */,
+				831A0B7C29756870009C7A69 /* AgentsViewController.swift in Sources */,
 				834F06DB296802A4008DECC5 /* SceneDelegate.swift in Sources */,
+				831A0B8029756895009C7A69 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

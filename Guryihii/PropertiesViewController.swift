@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PropertiesViewController: UIViewController {
 
+    @IBOutlet weak var propertiesLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        propertiesLabel.text = "Properties VC"
     }
 
 
