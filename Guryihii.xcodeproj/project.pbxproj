@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA05B313EEDC59803610B2B /* Pods_Guryihii.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1396944936B488F643FF201F /* Pods_Guryihii.framework */; };
 		831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7929756855009C7A69 /* NewProjectsViewController.swift */; };
 		831A0B7C29756870009C7A69 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7B29756870009C7A69 /* AgentsViewController.swift */; };
 		831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7D29756887009C7A69 /* ProfilesViewController.swift */; };
 		831A0B8029756895009C7A69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7F29756895009C7A69 /* MenuViewController.swift */; };
+		83275FBE2976CB2B00906E5B /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FBD2976CB2B00906E5B /* PropertyData.swift */; };
+		83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FBF2976CBE700906E5B /* PropertyManager.swift */; };
+		83275FC22976CCE400906E5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FC12976CCE400906E5B /* Constants.swift */; };
+		832CF1132975828A004B4A40 /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CF1122975828A004B4A40 /* PropertyModel.swift */; };
+		83495AD62976EF1B00F2A70E /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83495AD42976EF1B00F2A70E /* PropertyTableViewCell.swift */; };
+		83495AD72976EF1B00F2A70E /* PropertyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83495AD52976EF1B00F2A70E /* PropertyTableViewCell.xib */; };
 		834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06D8296802A4008DECC5 /* AppDelegate.swift */; };
 		834F06DB296802A4008DECC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06DA296802A4008DECC5 /* SceneDelegate.swift */; };
 		834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06DC296802A4008DECC5 /* PropertiesViewController.swift */; };
@@ -20,10 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1396944936B488F643FF201F /* Pods_Guryihii.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guryihii.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		831A0B7929756855009C7A69 /* NewProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectsViewController.swift; sourceTree = "<group>"; };
 		831A0B7B29756870009C7A69 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
 		831A0B7D29756887009C7A69 /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
 		831A0B7F29756895009C7A69 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		83275FBD2976CB2B00906E5B /* PropertyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
+		83275FBF2976CBE700906E5B /* PropertyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyManager.swift; sourceTree = "<group>"; };
+		83275FC12976CCE400906E5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		832CF1122975828A004B4A40 /* PropertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
+		83495AD42976EF1B00F2A70E /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		83495AD52976EF1B00F2A70E /* PropertyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyTableViewCell.xib; sourceTree = "<group>"; };
 		834F06D5296802A4008DECC5 /* Guryihii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guryihii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834F06D8296802A4008DECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		834F06DA296802A4008DECC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +46,8 @@
 		834F06E1296802A6008DECC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834F06E4296802A6008DECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834F06E6296802A6008DECC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB43ED7C0FA116369DE39BC /* Pods-Guryihii.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guryihii.debug.xcconfig"; path = "Target Support Files/Pods-Guryihii/Pods-Guryihii.debug.xcconfig"; sourceTree = "<group>"; };
+		A0D53D1B47F9305BB3350CE4 /* Pods-Guryihii.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guryihii.release.xcconfig"; path = "Target Support Files/Pods-Guryihii/Pods-Guryihii.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +55,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA05B313EEDC59803610B2B /* Pods_Guryihii.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		591A238FC5DF9E074D9F06CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1396944936B488F643FF201F /* Pods_Guryihii.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832CF10F29758218004B4A40 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				834F06DC296802A4008DECC5 /* PropertiesViewController.swift */,
+				831A0B7929756855009C7A69 /* NewProjectsViewController.swift */,
+				831A0B7B29756870009C7A69 /* AgentsViewController.swift */,
+				831A0B7D29756887009C7A69 /* ProfilesViewController.swift */,
+				831A0B7F29756895009C7A69 /* MenuViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		832CF11029758239004B4A40 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				834F06DE296802A4008DECC5 /* Main.storyboard */,
+				83495AD42976EF1B00F2A70E /* PropertyTableViewCell.swift */,
+				83495AD52976EF1B00F2A70E /* PropertyTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		832CF1112975825E004B4A40 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				832CF1122975828A004B4A40 /* PropertyModel.swift */,
+				83275FBD2976CB2B00906E5B /* PropertyData.swift */,
+				83275FBF2976CBE700906E5B /* PropertyManager.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		834F06CC296802A4008DECC5 = {
 			isa = PBXGroup;
 			children = (
 				834F06D7296802A4008DECC5 /* Guryihii */,
 				834F06D6296802A4008DECC5 /* Products */,
+				ECC21B9AF6EB2D77AE96C5B4 /* Pods */,
+				591A238FC5DF9E074D9F06CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,19 +123,27 @@
 		834F06D7296802A4008DECC5 /* Guryihii */ = {
 			isa = PBXGroup;
 			children = (
+				832CF1112975825E004B4A40 /* model */,
+				832CF11029758239004B4A40 /* view */,
+				832CF10F29758218004B4A40 /* controller */,
 				834F06D8296802A4008DECC5 /* AppDelegate.swift */,
 				834F06DA296802A4008DECC5 /* SceneDelegate.swift */,
-				834F06DE296802A4008DECC5 /* Main.storyboard */,
 				834F06E1296802A6008DECC5 /* Assets.xcassets */,
 				834F06E3296802A6008DECC5 /* LaunchScreen.storyboard */,
 				834F06E6296802A6008DECC5 /* Info.plist */,
-				834F06DC296802A4008DECC5 /* PropertiesViewController.swift */,
-				831A0B7929756855009C7A69 /* NewProjectsViewController.swift */,
-				831A0B7B29756870009C7A69 /* AgentsViewController.swift */,
-				831A0B7D29756887009C7A69 /* ProfilesViewController.swift */,
-				831A0B7F29756895009C7A69 /* MenuViewController.swift */,
+				83275FC12976CCE400906E5B /* Constants.swift */,
 			);
 			path = Guryihii;
+			sourceTree = "<group>";
+		};
+		ECC21B9AF6EB2D77AE96C5B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AB43ED7C0FA116369DE39BC /* Pods-Guryihii.debug.xcconfig */,
+				A0D53D1B47F9305BB3350CE4 /* Pods-Guryihii.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 834F06E9296802A6008DECC5 /* Build configuration list for PBXNativeTarget "Guryihii" */;
 			buildPhases = (
+				380558DBC7BF70E12DC1FC08 /* [CP] Check Pods Manifest.lock */,
 				834F06D1296802A4008DECC5 /* Sources */,
 				834F06D2296802A4008DECC5 /* Frameworks */,
 				834F06D3296802A4008DECC5 /* Resources */,
+				5E4E640599D7595B773F436A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,11 +208,54 @@
 			files = (
 				834F06E5296802A6008DECC5 /* LaunchScreen.storyboard in Resources */,
 				834F06E2296802A6008DECC5 /* Assets.xcassets in Resources */,
+				83495AD72976EF1B00F2A70E /* PropertyTableViewCell.xib in Resources */,
 				834F06E0296802A4008DECC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		380558DBC7BF70E12DC1FC08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Guryihii-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E4E640599D7595B773F436A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guryihii/Pods-Guryihii-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guryihii/Pods-Guryihii-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guryihii/Pods-Guryihii-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		834F06D1296802A4008DECC5 /* Sources */ = {
@@ -151,11 +263,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */,
+				83275FC22976CCE400906E5B /* Constants.swift in Sources */,
+				83495AD62976EF1B00F2A70E /* PropertyTableViewCell.swift in Sources */,
 				831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */,
+				83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */,
 				831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */,
 				834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */,
 				831A0B7C29756870009C7A69 /* AgentsViewController.swift in Sources */,
+				83275FBE2976CB2B00906E5B /* PropertyData.swift in Sources */,
 				834F06DB296802A4008DECC5 /* SceneDelegate.swift in Sources */,
+				832CF1132975828A004B4A40 /* PropertyModel.swift in Sources */,
 				831A0B8029756895009C7A69 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +415,7 @@
 		};
 		834F06EA296802A6008DECC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB43ED7C0FA116369DE39BC /* Pods-Guryihii.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +444,7 @@
 		};
 		834F06EB296802A6008DECC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D53D1B47F9305BB3350CE4 /* Pods-Guryihii.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
