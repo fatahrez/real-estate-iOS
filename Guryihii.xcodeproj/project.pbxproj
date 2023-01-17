@@ -11,6 +11,10 @@
 		831A0B7C29756870009C7A69 /* AgentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7B29756870009C7A69 /* AgentsViewController.swift */; };
 		831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7D29756887009C7A69 /* ProfilesViewController.swift */; };
 		831A0B8029756895009C7A69 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A0B7F29756895009C7A69 /* MenuViewController.swift */; };
+		83275FBE2976CB2B00906E5B /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FBD2976CB2B00906E5B /* PropertyData.swift */; };
+		83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FBF2976CBE700906E5B /* PropertyManager.swift */; };
+		83275FC22976CCE400906E5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FC12976CCE400906E5B /* Constants.swift */; };
+		832CF1132975828A004B4A40 /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CF1122975828A004B4A40 /* PropertyModel.swift */; };
 		834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06D8296802A4008DECC5 /* AppDelegate.swift */; };
 		834F06DB296802A4008DECC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06DA296802A4008DECC5 /* SceneDelegate.swift */; };
 		834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06DC296802A4008DECC5 /* PropertiesViewController.swift */; };
@@ -24,6 +28,10 @@
 		831A0B7B29756870009C7A69 /* AgentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsViewController.swift; sourceTree = "<group>"; };
 		831A0B7D29756887009C7A69 /* ProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
 		831A0B7F29756895009C7A69 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		83275FBD2976CB2B00906E5B /* PropertyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
+		83275FBF2976CBE700906E5B /* PropertyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyManager.swift; sourceTree = "<group>"; };
+		83275FC12976CCE400906E5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		832CF1122975828A004B4A40 /* PropertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
 		834F06D5296802A4008DECC5 /* Guryihii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guryihii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834F06D8296802A4008DECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		834F06DA296802A4008DECC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832CF10F29758218004B4A40 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				834F06DC296802A4008DECC5 /* PropertiesViewController.swift */,
+				831A0B7929756855009C7A69 /* NewProjectsViewController.swift */,
+				831A0B7B29756870009C7A69 /* AgentsViewController.swift */,
+				831A0B7D29756887009C7A69 /* ProfilesViewController.swift */,
+				831A0B7F29756895009C7A69 /* MenuViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		832CF11029758239004B4A40 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				834F06DE296802A4008DECC5 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		832CF1112975825E004B4A40 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				832CF1122975828A004B4A40 /* PropertyModel.swift */,
+				83275FBD2976CB2B00906E5B /* PropertyData.swift */,
+				83275FBF2976CBE700906E5B /* PropertyManager.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		834F06CC296802A4008DECC5 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +102,15 @@
 		834F06D7296802A4008DECC5 /* Guryihii */ = {
 			isa = PBXGroup;
 			children = (
+				832CF1112975825E004B4A40 /* model */,
+				832CF11029758239004B4A40 /* view */,
+				832CF10F29758218004B4A40 /* controller */,
 				834F06D8296802A4008DECC5 /* AppDelegate.swift */,
 				834F06DA296802A4008DECC5 /* SceneDelegate.swift */,
-				834F06DE296802A4008DECC5 /* Main.storyboard */,
 				834F06E1296802A6008DECC5 /* Assets.xcassets */,
 				834F06E3296802A6008DECC5 /* LaunchScreen.storyboard */,
 				834F06E6296802A6008DECC5 /* Info.plist */,
-				834F06DC296802A4008DECC5 /* PropertiesViewController.swift */,
-				831A0B7929756855009C7A69 /* NewProjectsViewController.swift */,
-				831A0B7B29756870009C7A69 /* AgentsViewController.swift */,
-				831A0B7D29756887009C7A69 /* ProfilesViewController.swift */,
-				831A0B7F29756895009C7A69 /* MenuViewController.swift */,
+				83275FC12976CCE400906E5B /* Constants.swift */,
 			);
 			path = Guryihii;
 			sourceTree = "<group>";
@@ -151,11 +187,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */,
+				83275FC22976CCE400906E5B /* Constants.swift in Sources */,
 				831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */,
+				83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */,
 				831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */,
 				834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */,
 				831A0B7C29756870009C7A69 /* AgentsViewController.swift in Sources */,
+				83275FBE2976CB2B00906E5B /* PropertyData.swift in Sources */,
 				834F06DB296802A4008DECC5 /* SceneDelegate.swift in Sources */,
+				832CF1132975828A004B4A40 /* PropertyModel.swift in Sources */,
 				831A0B8029756895009C7A69 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

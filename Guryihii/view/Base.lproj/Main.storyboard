@@ -75,9 +75,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xFi-T4-EsB"/>
                         <segue destination="xsF-9h-7bQ" kind="relationship" relationship="viewControllers" id="1TD-Ra-z6A"/>
+                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
                         <segue destination="anf-Qh-uEJ" kind="relationship" relationship="viewControllers" id="APk-rB-Gg1"/>
                         <segue destination="0oL-Ld-Diq" kind="relationship" relationship="viewControllers" id="Xfd-oS-ry6"/>
                     </connections>
@@ -179,7 +179,7 @@
         <image name="crane" width="18.666666030883789" height="18.666666030883789"/>
         <image name="menu" width="18.666666030883789" height="18.666666030883789"/>
         <image name="profile" width="18.666666030883789" height="18.666666030883789"/>
-        <image name="properties" width="18" height="18"/>
+        <image name="properties" width="18.666666030883789" height="18.666666030883789"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
