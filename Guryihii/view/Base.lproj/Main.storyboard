@@ -16,25 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz1-OO-N38">
-                                <rect key="frame" x="140" y="416" width="114" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="39" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-mU-A1g">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="59f-vW-qPL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gCP-mU-A1g" firstAttribute="trailing" secondItem="59f-vW-qPL" secondAttribute="trailing" id="Cbo-q6-PSX"/>
+                            <constraint firstItem="gCP-mU-A1g" firstAttribute="top" secondItem="59f-vW-qPL" secondAttribute="top" id="YJ0-OZ-Bl1"/>
+                            <constraint firstItem="gCP-mU-A1g" firstAttribute="leading" secondItem="59f-vW-qPL" secondAttribute="leading" id="YrU-z6-Ngr"/>
+                            <constraint firstItem="gCP-mU-A1g" firstAttribute="bottom" secondItem="59f-vW-qPL" secondAttribute="bottom" id="uxX-tP-gB5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Properties" image="properties" id="06w-Pu-72H"/>
                     <connections>
-                        <outlet property="propertiesLabel" destination="Hz1-OO-N38" id="bH4-hI-Y0I"/>
+                        <outlet property="propertiesTableView" destination="gCP-mU-A1g" id="byP-iI-enc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAN-nj-r55" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1277" y="-1942"/>
+            <point key="canvasLocation" x="-1277.0992366412213" y="-1942.2535211267607"/>
         </scene>
         <!--New Projects-->
         <scene sceneID="tne-QT-ifu">
@@ -75,9 +78,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xFi-T4-EsB"/>
                         <segue destination="xsF-9h-7bQ" kind="relationship" relationship="viewControllers" id="1TD-Ra-z6A"/>
-                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
                         <segue destination="anf-Qh-uEJ" kind="relationship" relationship="viewControllers" id="APk-rB-Gg1"/>
                         <segue destination="0oL-Ld-Diq" kind="relationship" relationship="viewControllers" id="Xfd-oS-ry6"/>
                     </connections>

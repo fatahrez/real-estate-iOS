@@ -9,4 +9,7 @@ import Foundation
 
 struct K {
     static let baseURL = "http://24.199.124.221/api/"
+    static let baseURLWithoutAPI = "http://24.199.124.221/"
+    static let propertyCellIdentifier = "PropertyCell"
+    static let propertyCellNibName = "PropertyTableViewCell"
 }

@@ -9,4 +9,5 @@ import Foundation
 
 struct PropertyModel: Codable {
     let title: String
+    let cover_photo: String
 }
