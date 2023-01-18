@@ -16,6 +16,7 @@
 		83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FBF2976CBE700906E5B /* PropertyManager.swift */; };
 		83275FC22976CCE400906E5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FC12976CCE400906E5B /* Constants.swift */; };
 		832CF1132975828A004B4A40 /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CF1122975828A004B4A40 /* PropertyModel.swift */; };
+		833478D1297851490067A80F /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833478D0297851490067A80F /* PropertyDetailsViewController.swift */; };
 		83495AD62976EF1B00F2A70E /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83495AD42976EF1B00F2A70E /* PropertyTableViewCell.swift */; };
 		83495AD72976EF1B00F2A70E /* PropertyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83495AD52976EF1B00F2A70E /* PropertyTableViewCell.xib */; };
 		834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06D8296802A4008DECC5 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		83275FBF2976CBE700906E5B /* PropertyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyManager.swift; sourceTree = "<group>"; };
 		83275FC12976CCE400906E5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		832CF1122975828A004B4A40 /* PropertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
+		833478D0297851490067A80F /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		83495AD42976EF1B00F2A70E /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		83495AD52976EF1B00F2A70E /* PropertyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyTableViewCell.xib; sourceTree = "<group>"; };
 		834F06D5296802A4008DECC5 /* Guryihii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guryihii.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 				831A0B7B29756870009C7A69 /* AgentsViewController.swift */,
 				831A0B7D29756887009C7A69 /* ProfilesViewController.swift */,
 				831A0B7F29756895009C7A69 /* MenuViewController.swift */,
+				833478D0297851490067A80F /* PropertyDetailsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */,
 				83275FC22976CCE400906E5B /* Constants.swift in Sources */,
 				83495AD62976EF1B00F2A70E /* PropertyTableViewCell.swift in Sources */,
+				833478D1297851490067A80F /* PropertyDetailsViewController.swift in Sources */,
 				831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */,
 				83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */,
 				831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */,

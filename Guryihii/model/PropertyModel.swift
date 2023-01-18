@@ -15,4 +15,5 @@ struct PropertyModel: Codable {
     let street_address: String
     let property_type: String
     let price: String
+    let slug: String
 }

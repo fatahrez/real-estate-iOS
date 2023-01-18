@@ -26,6 +26,8 @@ class PropertyTableViewCell: UITableViewCell {
         
         coverPhotoImageView.layer.cornerRadius = 10
         priceLabel.isUserInteractionEnabled = false
+        
+//        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.goToPr))
     }
 
     @IBAction func favouritePressed(_ sender: UIButton) {

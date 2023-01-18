@@ -15,6 +15,8 @@ class PropertiesViewController: UIViewController {
     var propertyManager = PropertyManager()
     var properties: [PropertyModel] = []
     
+    var slug: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,12 +35,26 @@ class PropertiesViewController: UIViewController {
             alpha: 1.0
         )
         
+        self.propertiesTableView.delegate = self
         self.propertiesTableView.dataSource = self
         self.propertiesTableView.register(
             UINib(nibName: K.propertyCellNibName, bundle: nil),
             forCellReuseIdentifier: K.propertyCellIdentifier
         )
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == K.propertyDetailsSegue {
+            let destinationVC = segue.destination as! PropertyDetailsViewController
+            destinationVC.slug = slug
+        }
+    }
+
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        // Trigger the segue to the next view controller
+//        performSegue(withIdentifier: "showDetail", sender: self)
+//    }
 }
 
 
@@ -57,7 +73,7 @@ extension PropertiesViewController: PropertyManagerDelegate {
     }
 }
 
-extension PropertiesViewController: UITableViewDataSource {
+extension PropertiesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //TODO: Add error handling for empty properties array
         return properties.count
@@ -80,5 +96,10 @@ extension PropertiesViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        slug = properties[indexPath.row].slug
+        performSegue(withIdentifier: K.propertyDetailsSegue, sender: self)
+    }
     
 }
+

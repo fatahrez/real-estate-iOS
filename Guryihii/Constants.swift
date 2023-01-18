@@ -12,4 +12,5 @@ struct K {
     static let baseURLWithoutAPI = "http://24.199.124.221/"
     static let propertyCellIdentifier = "PropertyCell"
     static let propertyCellNibName = "PropertyTableViewCell"
+    static let propertyDetailsSegue = "PropertiesToPropertyDetails"
 }
