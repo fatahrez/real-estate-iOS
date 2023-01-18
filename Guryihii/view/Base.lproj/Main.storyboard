@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,28 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="39" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-mU-A1g">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="39" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-mU-A1g">
+                                <rect key="frame" x="8" y="68" width="377" height="701"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="59f-vW-qPL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="gCP-mU-A1g" firstAttribute="trailing" secondItem="59f-vW-qPL" secondAttribute="trailing" id="Cbo-q6-PSX"/>
-                            <constraint firstItem="gCP-mU-A1g" firstAttribute="top" secondItem="59f-vW-qPL" secondAttribute="top" id="YJ0-OZ-Bl1"/>
-                            <constraint firstItem="gCP-mU-A1g" firstAttribute="leading" secondItem="59f-vW-qPL" secondAttribute="leading" id="YrU-z6-Ngr"/>
+                            <constraint firstItem="gCP-mU-A1g" firstAttribute="trailing" secondItem="59f-vW-qPL" secondAttribute="trailing" constant="4" id="Cbo-q6-PSX"/>
+                            <constraint firstItem="gCP-mU-A1g" firstAttribute="top" secondItem="59f-vW-qPL" secondAttribute="top" constant="4" id="YJ0-OZ-Bl1"/>
+                            <constraint firstItem="gCP-mU-A1g" firstAttribute="leading" secondItem="59f-vW-qPL" secondAttribute="leading" constant="4" id="YrU-z6-Ngr"/>
                             <constraint firstItem="gCP-mU-A1g" firstAttribute="bottom" secondItem="59f-vW-qPL" secondAttribute="bottom" id="uxX-tP-gB5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Properties" image="properties" id="06w-Pu-72H"/>
                     <connections>
                         <outlet property="propertiesTableView" destination="gCP-mU-A1g" id="byP-iI-enc"/>
+                        <segue destination="D6e-Pt-T6W" kind="showDetail" identifier="PropertiesToPropertyDetails" id="bjR-qY-grR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAN-nj-r55" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1277.0992366412213" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="-2187" y="-1942"/>
+        </scene>
+        <!--Property Details View Controller-->
+        <scene sceneID="q1v-GI-Bgc">
+            <objects>
+                <viewController id="D6e-Pt-T6W" customClass="PropertyDetailsViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="PJt-39-yfD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-pe-h8A">
+                                <rect key="frame" x="175" y="383" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nG4-0x-xwb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NVs-pe-h8A" firstAttribute="top" secondItem="nG4-0x-xwb" secondAttribute="top" constant="324" id="LoR-WL-VlY"/>
+                            <constraint firstItem="nG4-0x-xwb" firstAttribute="bottom" secondItem="NVs-pe-h8A" secondAttribute="bottom" constant="414" id="aO5-0n-tvd"/>
+                            <constraint firstItem="nG4-0x-xwb" firstAttribute="trailing" secondItem="NVs-pe-h8A" secondAttribute="trailing" constant="138" id="j3r-Rs-Xn6"/>
+                            <constraint firstItem="NVs-pe-h8A" firstAttribute="leading" secondItem="nG4-0x-xwb" secondAttribute="leading" constant="175" id="wjO-wr-azf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d3N-6k-8yE"/>
+                    <connections>
+                        <outlet property="slugLabel" destination="NVs-pe-h8A" id="Nee-N3-cGZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xs4-UP-gpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2187.0229007633588" y="-1171.1267605633802"/>
         </scene>
         <!--New Projects-->
         <scene sceneID="tne-QT-ifu">
@@ -56,7 +92,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="New Projects" image="crane" id="ugK-GQ-57r"/>
                     <connections>
@@ -65,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2033" y="-1942"/>
+            <point key="canvasLocation" x="-1344" y="-1942"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Yk-bV-HWu">
@@ -106,7 +142,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EGU-IH-5sd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Agents" image="agents" id="EUN-Zn-jTg"/>
                     <navigationItem key="navigationItem" id="TAP-Oz-vjO"/>
@@ -135,7 +171,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Z1-vL-NkL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="ojH-sV-duu"/>
                     <navigationItem key="navigationItem" id="qUe-H3-DEj"/>
@@ -164,7 +200,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="08A-sn-TPg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="menu" id="1y3-MV-rst"/>
                     <navigationItem key="navigationItem" id="vtk-Dh-L0j"/>
@@ -183,6 +219,12 @@
         <image name="menu" width="18.666666030883789" height="18.666666030883789"/>
         <image name="profile" width="18.666666030883789" height="18.666666030883789"/>
         <image name="properties" width="18.666666030883789" height="18.666666030883789"/>
+        <namedColor name="AccentColor">
+            <color red="0.36470588235294116" green="0.67450980392156867" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundColor">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

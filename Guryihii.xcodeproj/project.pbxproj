@@ -16,6 +16,7 @@
 		83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FBF2976CBE700906E5B /* PropertyManager.swift */; };
 		83275FC22976CCE400906E5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83275FC12976CCE400906E5B /* Constants.swift */; };
 		832CF1132975828A004B4A40 /* PropertyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CF1122975828A004B4A40 /* PropertyModel.swift */; };
+		833478D1297851490067A80F /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833478D0297851490067A80F /* PropertyDetailsViewController.swift */; };
 		83495AD62976EF1B00F2A70E /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83495AD42976EF1B00F2A70E /* PropertyTableViewCell.swift */; };
 		83495AD72976EF1B00F2A70E /* PropertyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83495AD52976EF1B00F2A70E /* PropertyTableViewCell.xib */; };
 		834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F06D8296802A4008DECC5 /* AppDelegate.swift */; };
@@ -24,6 +25,17 @@
 		834F06E0296802A4008DECC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F06DE296802A4008DECC5 /* Main.storyboard */; };
 		834F06E2296802A6008DECC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834F06E1296802A6008DECC5 /* Assets.xcassets */; };
 		834F06E5296802A6008DECC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F06E3296802A6008DECC5 /* LaunchScreen.storyboard */; };
+		83E591D92977F1D5003C64CE /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591CE2977F1D5003C64CE /* Lato-BlackItalic.ttf */; };
+		83E591DA2977F1D5003C64CE /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591CF2977F1D5003C64CE /* Lato-BoldItalic.ttf */; };
+		83E591DB2977F1D5003C64CE /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D02977F1D5003C64CE /* Lato-Italic.ttf */; };
+		83E591DC2977F1D5003C64CE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D12977F1D5003C64CE /* Lato-Regular.ttf */; };
+		83E591DD2977F1D5003C64CE /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D22977F1D5003C64CE /* Lato-Thin.ttf */; };
+		83E591DE2977F1D5003C64CE /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D32977F1D5003C64CE /* Lato-Black.ttf */; };
+		83E591DF2977F1D5003C64CE /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D42977F1D5003C64CE /* Lato-Light.ttf */; };
+		83E591E02977F1D5003C64CE /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D52977F1D5003C64CE /* Lato-LightItalic.ttf */; };
+		83E591E12977F1D5003C64CE /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D62977F1D5003C64CE /* OFL.txt */; };
+		83E591E22977F1D5003C64CE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D72977F1D5003C64CE /* Lato-Bold.ttf */; };
+		83E591E32977F1D5003C64CE /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D82977F1D5003C64CE /* Lato-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +48,7 @@
 		83275FBF2976CBE700906E5B /* PropertyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyManager.swift; sourceTree = "<group>"; };
 		83275FC12976CCE400906E5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		832CF1122975828A004B4A40 /* PropertyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyModel.swift; sourceTree = "<group>"; };
+		833478D0297851490067A80F /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
 		83495AD42976EF1B00F2A70E /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		83495AD52976EF1B00F2A70E /* PropertyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyTableViewCell.xib; sourceTree = "<group>"; };
 		834F06D5296802A4008DECC5 /* Guryihii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guryihii.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +59,17 @@
 		834F06E1296802A6008DECC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834F06E4296802A6008DECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834F06E6296802A6008DECC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E591CE2977F1D5003C64CE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		83E591CF2977F1D5003C64CE /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		83E591D02977F1D5003C64CE /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		83E591D12977F1D5003C64CE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		83E591D22977F1D5003C64CE /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		83E591D32977F1D5003C64CE /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		83E591D42977F1D5003C64CE /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		83E591D52977F1D5003C64CE /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		83E591D62977F1D5003C64CE /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		83E591D72977F1D5003C64CE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		83E591D82977F1D5003C64CE /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		9AB43ED7C0FA116369DE39BC /* Pods-Guryihii.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guryihii.debug.xcconfig"; path = "Target Support Files/Pods-Guryihii/Pods-Guryihii.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D53D1B47F9305BB3350CE4 /* Pods-Guryihii.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guryihii.release.xcconfig"; path = "Target Support Files/Pods-Guryihii/Pods-Guryihii.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +102,7 @@
 				831A0B7B29756870009C7A69 /* AgentsViewController.swift */,
 				831A0B7D29756887009C7A69 /* ProfilesViewController.swift */,
 				831A0B7F29756895009C7A69 /* MenuViewController.swift */,
+				833478D0297851490067A80F /* PropertyDetailsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -123,6 +148,7 @@
 		834F06D7296802A4008DECC5 /* Guryihii */ = {
 			isa = PBXGroup;
 			children = (
+				83E591CD2977F13D003C64CE /* fonts */,
 				832CF1112975825E004B4A40 /* model */,
 				832CF11029758239004B4A40 /* view */,
 				832CF10F29758218004B4A40 /* controller */,
@@ -136,13 +162,30 @@
 			path = Guryihii;
 			sourceTree = "<group>";
 		};
+		83E591CD2977F13D003C64CE /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83E591D32977F1D5003C64CE /* Lato-Black.ttf */,
+				83E591CE2977F1D5003C64CE /* Lato-BlackItalic.ttf */,
+				83E591D72977F1D5003C64CE /* Lato-Bold.ttf */,
+				83E591CF2977F1D5003C64CE /* Lato-BoldItalic.ttf */,
+				83E591D02977F1D5003C64CE /* Lato-Italic.ttf */,
+				83E591D42977F1D5003C64CE /* Lato-Light.ttf */,
+				83E591D52977F1D5003C64CE /* Lato-LightItalic.ttf */,
+				83E591D12977F1D5003C64CE /* Lato-Regular.ttf */,
+				83E591D22977F1D5003C64CE /* Lato-Thin.ttf */,
+				83E591D82977F1D5003C64CE /* Lato-ThinItalic.ttf */,
+				83E591D62977F1D5003C64CE /* OFL.txt */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		ECC21B9AF6EB2D77AE96C5B4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9AB43ED7C0FA116369DE39BC /* Pods-Guryihii.debug.xcconfig */,
 				A0D53D1B47F9305BB3350CE4 /* Pods-Guryihii.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,8 +250,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				834F06E5296802A6008DECC5 /* LaunchScreen.storyboard in Resources */,
+				83E591DD2977F1D5003C64CE /* Lato-Thin.ttf in Resources */,
+				83E591DB2977F1D5003C64CE /* Lato-Italic.ttf in Resources */,
+				83E591DF2977F1D5003C64CE /* Lato-Light.ttf in Resources */,
 				834F06E2296802A6008DECC5 /* Assets.xcassets in Resources */,
+				83E591DC2977F1D5003C64CE /* Lato-Regular.ttf in Resources */,
+				83E591D92977F1D5003C64CE /* Lato-BlackItalic.ttf in Resources */,
+				83E591E32977F1D5003C64CE /* Lato-ThinItalic.ttf in Resources */,
+				83E591E22977F1D5003C64CE /* Lato-Bold.ttf in Resources */,
+				83E591E02977F1D5003C64CE /* Lato-LightItalic.ttf in Resources */,
+				83E591E12977F1D5003C64CE /* OFL.txt in Resources */,
+				83E591DA2977F1D5003C64CE /* Lato-BoldItalic.ttf in Resources */,
 				83495AD72976EF1B00F2A70E /* PropertyTableViewCell.xib in Resources */,
+				83E591DE2977F1D5003C64CE /* Lato-Black.ttf in Resources */,
 				834F06E0296802A4008DECC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +319,7 @@
 				834F06DD296802A4008DECC5 /* PropertiesViewController.swift in Sources */,
 				83275FC22976CCE400906E5B /* Constants.swift in Sources */,
 				83495AD62976EF1B00F2A70E /* PropertyTableViewCell.swift in Sources */,
+				833478D1297851490067A80F /* PropertyDetailsViewController.swift in Sources */,
 				831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */,
 				83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */,
 				831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */,

@@ -15,19 +15,46 @@ class PropertiesViewController: UIViewController {
     var propertyManager = PropertyManager()
     var properties: [PropertyModel] = []
     
+    var slug: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         propertyManager.delegate = self
         propertyManager.fetchProperties()
         
-        self.propertiesTableView.rowHeight = 250
+        propertiesTableView.rowHeight = 350
+        propertiesTableView.isScrollEnabled = true
+        propertiesTableView.alwaysBounceHorizontal = false
+        propertiesTableView.separatorStyle = .none
+        propertiesTableView.backgroundColor =
+        UIColor(
+            red: 247.0/255,
+            green: 247.0/255,
+            blue: 247.0/255,
+            alpha: 1.0
+        )
+        
+        self.propertiesTableView.delegate = self
         self.propertiesTableView.dataSource = self
         self.propertiesTableView.register(
             UINib(nibName: K.propertyCellNibName, bundle: nil),
             forCellReuseIdentifier: K.propertyCellIdentifier
         )
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == K.propertyDetailsSegue {
+            let destinationVC = segue.destination as! PropertyDetailsViewController
+            destinationVC.slug = slug
+        }
+    }
+
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        // Trigger the segue to the next view controller
+//        performSegue(withIdentifier: "showDetail", sender: self)
+//    }
 }
 
 
@@ -46,7 +73,7 @@ extension PropertiesViewController: PropertyManagerDelegate {
     }
 }
 
-extension PropertiesViewController: UITableViewDataSource {
+extension PropertiesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //TODO: Add error handling for empty properties array
         return properties.count
@@ -55,14 +82,24 @@ extension PropertiesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let property = properties[indexPath.row]
         
+        let propertyDescription = property.property_type + " | " + property.city + " | " +
+        String(property.bedrooms) + " bedroom" + " | " + property.street_address
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: K.propertyCellIdentifier, for: indexPath)
             as! PropertyTableViewCell
-        cell.titleLabel.text = property.title
+        
+        cell.titleLabel.text = propertyDescription
         
         cell.coverPhotoImageView.sd_setImage(with: URL(string: K.baseURLWithoutAPI+property.cover_photo), placeholderImage: UIImage(named: "house_placeholder"))
+        cell.priceLabel.setTitle("$"+property.price, for: .normal)
         
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        slug = properties[indexPath.row].slug
+        performSegue(withIdentifier: K.propertyDetailsSegue, sender: self)
+    }
     
 }
+
