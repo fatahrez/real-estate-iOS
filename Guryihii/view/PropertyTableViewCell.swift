@@ -19,9 +19,9 @@ class PropertyTableViewCell: UITableViewCell {
         // Initialization code
         propertyCardView.clipsToBounds = false
         propertyCardView.layer.cornerRadius = 15
-        propertyCardView.backgroundColor = UIColor.white
+//        propertyCardView.backgroundColor = UIColor.white
         
-        self.backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1.0)
+//        self.backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1.0)
         self.selectionStyle = .none
         
         coverPhotoImageView.layer.cornerRadius = 10

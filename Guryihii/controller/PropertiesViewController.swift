@@ -27,13 +27,13 @@ class PropertiesViewController: UIViewController {
         propertiesTableView.isScrollEnabled = true
         propertiesTableView.alwaysBounceHorizontal = false
         propertiesTableView.separatorStyle = .none
-        propertiesTableView.backgroundColor =
-        UIColor(
-            red: 247.0/255,
-            green: 247.0/255,
-            blue: 247.0/255,
-            alpha: 1.0
-        )
+//        propertiesTableView.backgroundColor =
+//        UIColor(
+//            red: 247.0/255,
+//            green: 247.0/255,
+//            blue: 247.0/255,
+//            alpha: 1.0
+//        )
         
         self.propertiesTableView.delegate = self
         self.propertiesTableView.dataSource = self
@@ -49,12 +49,6 @@ class PropertiesViewController: UIViewController {
             destinationVC.slug = slug
         }
     }
-
-    
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        // Trigger the segue to the next view controller
-//        performSegue(withIdentifier: "showDetail", sender: self)
-//    }
 }
 
 

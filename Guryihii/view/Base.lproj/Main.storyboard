@@ -20,6 +20,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="39" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-mU-A1g">
                                 <rect key="frame" x="8" y="68" width="377" height="701"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="BackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="59f-vW-qPL"/>
@@ -32,48 +33,63 @@
                             <constraint firstItem="gCP-mU-A1g" firstAttribute="bottom" secondItem="59f-vW-qPL" secondAttribute="bottom" id="uxX-tP-gB5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Properties" image="properties" id="06w-Pu-72H"/>
+                    <navigationItem key="navigationItem" id="XbE-xF-fXT">
+                        <barButtonItem key="backBarButtonItem" title="Properties" id="yVW-5S-Btn"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="propertiesTableView" destination="gCP-mU-A1g" id="byP-iI-enc"/>
-                        <segue destination="D6e-Pt-T6W" kind="showDetail" identifier="PropertiesToPropertyDetails" id="bjR-qY-grR"/>
+                        <segue destination="D6e-Pt-T6W" kind="show" identifier="PropertiesToPropertyDetails" id="bjR-qY-grR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAN-nj-r55" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2187" y="-1942"/>
+            <point key="canvasLocation" x="-2187" y="-1227"/>
         </scene>
         <!--Property Details View Controller-->
         <scene sceneID="q1v-GI-Bgc">
             <objects>
                 <viewController id="D6e-Pt-T6W" customClass="PropertyDetailsViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="PJt-39-yfD">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                    <view key="view" contentMode="scaleToFill" id="PJt-39-yfD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-pe-h8A">
-                                <rect key="frame" x="175" y="383" width="80" height="21"/>
+                                <rect key="frame" x="175" y="427" width="80" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-67-weB" customClass="iCarousel">
+                                <rect key="frame" x="16" y="119" width="361" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="72k-mO-aRZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nG4-0x-xwb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NVs-pe-h8A" firstAttribute="top" secondItem="nG4-0x-xwb" secondAttribute="top" constant="324" id="LoR-WL-VlY"/>
-                            <constraint firstItem="nG4-0x-xwb" firstAttribute="bottom" secondItem="NVs-pe-h8A" secondAttribute="bottom" constant="414" id="aO5-0n-tvd"/>
-                            <constraint firstItem="nG4-0x-xwb" firstAttribute="trailing" secondItem="NVs-pe-h8A" secondAttribute="trailing" constant="138" id="j3r-Rs-Xn6"/>
-                            <constraint firstItem="NVs-pe-h8A" firstAttribute="leading" secondItem="nG4-0x-xwb" secondAttribute="leading" constant="175" id="wjO-wr-azf"/>
+                            <constraint firstItem="nG4-0x-xwb" firstAttribute="trailing" secondItem="q0h-67-weB" secondAttribute="trailing" constant="16" id="1ND-qN-Dh4"/>
+                            <constraint firstItem="NVs-pe-h8A" firstAttribute="top" secondItem="nG4-0x-xwb" secondAttribute="top" constant="324" id="975-kK-sZN"/>
+                            <constraint firstItem="NVs-pe-h8A" firstAttribute="leading" secondItem="nG4-0x-xwb" secondAttribute="leading" constant="175" id="FAf-9P-6zg"/>
+                            <constraint firstItem="nG4-0x-xwb" firstAttribute="bottom" secondItem="NVs-pe-h8A" secondAttribute="bottom" constant="314" id="KoB-Nn-Hd4"/>
+                            <constraint firstItem="nG4-0x-xwb" firstAttribute="trailing" secondItem="NVs-pe-h8A" secondAttribute="trailing" constant="138" id="Vy9-1C-IPl"/>
+                            <constraint firstItem="q0h-67-weB" firstAttribute="top" secondItem="nG4-0x-xwb" secondAttribute="top" constant="16" id="jsm-vH-9is"/>
+                            <constraint firstItem="q0h-67-weB" firstAttribute="leading" secondItem="nG4-0x-xwb" secondAttribute="leading" constant="16" id="mM1-lM-SDM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="d3N-6k-8yE"/>
+                    <navigationItem key="navigationItem" id="d3N-6k-8yE">
+                        <barButtonItem key="rightBarButtonItem" image="square.and.arrow.up" catalog="system" style="plain" id="HT5-93-Zcy"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="propertyImageSlideView" destination="q0h-67-weB" id="8vg-eF-fhx"/>
                         <outlet property="slugLabel" destination="NVs-pe-h8A" id="Nee-N3-cGZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xs4-UP-gpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2187.0229007633588" y="-1171.1267605633802"/>
+            <point key="canvasLocation" x="-2187.0229007633588" y="-485.21126760563385"/>
         </scene>
         <!--New Projects-->
         <scene sceneID="tne-QT-ifu">
@@ -101,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1344" y="-1942"/>
+            <point key="canvasLocation" x="-686" y="-1917"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Yk-bV-HWu">
@@ -114,7 +130,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
+                        <segue destination="IO5-1y-09x" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xFi-T4-EsB"/>
                         <segue destination="xsF-9h-7bQ" kind="relationship" relationship="viewControllers" id="1TD-Ra-z6A"/>
                         <segue destination="anf-Qh-uEJ" kind="relationship" relationship="viewControllers" id="APk-rB-Gg1"/>
@@ -152,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CA-XG-aaV" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-573.28244274809163" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="353.43511450381681" y="-1942.2535211267607"/>
         </scene>
         <!--Profile-->
         <scene sceneID="vEH-9E-8Pn">
@@ -181,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GX6-WM-WAU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75.572519083969468" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="1002.2900763358779" y="-1942.2535211267607"/>
         </scene>
         <!--Menu-->
         <scene sceneID="Qho-jY-v8s">
@@ -210,7 +226,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uh5-do-cyG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.74045801526711" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="1640.4580152671756" y="-1942.2535211267607"/>
+        </scene>
+        <!--Properties-->
+        <scene sceneID="mjY-7Z-C8H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IO5-1y-09x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Properties" image="properties" id="06w-Pu-72H"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bX1-xr-Cyy">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Ja-df-p3J" kind="relationship" relationship="rootViewController" id="Ex8-lb-rND"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4W-i7-pHp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2187.0229007633588" y="-1942.2535211267607"/>
         </scene>
     </scenes>
     <resources>
@@ -219,6 +254,7 @@
         <image name="menu" width="18.666666030883789" height="18.666666030883789"/>
         <image name="profile" width="18.666666030883789" height="18.666666030883789"/>
         <image name="properties" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.36470588235294116" green="0.67450980392156867" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
