@@ -26,6 +26,8 @@
 		834F06E0296802A4008DECC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F06DE296802A4008DECC5 /* Main.storyboard */; };
 		834F06E2296802A6008DECC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834F06E1296802A6008DECC5 /* Assets.xcassets */; };
 		834F06E5296802A6008DECC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834F06E3296802A6008DECC5 /* LaunchScreen.storyboard */; };
+		8370898429793A9B0010E4B2 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8370898229793A9B0010E4B2 /* iCarousel.m */; };
+		8370898629793B330010E4B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370898529793B330010E4B2 /* QuartzCore.framework */; };
 		83E591D92977F1D5003C64CE /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591CE2977F1D5003C64CE /* Lato-BlackItalic.ttf */; };
 		83E591DA2977F1D5003C64CE /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591CF2977F1D5003C64CE /* Lato-BoldItalic.ttf */; };
 		83E591DB2977F1D5003C64CE /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E591D02977F1D5003C64CE /* Lato-Italic.ttf */; };
@@ -61,6 +63,10 @@
 		834F06E1296802A6008DECC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834F06E4296802A6008DECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834F06E6296802A6008DECC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8370898129793A9A0010E4B2 /* Guryihii-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guryihii-Bridging-Header.h"; sourceTree = "<group>"; };
+		8370898229793A9B0010E4B2 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		8370898329793A9B0010E4B2 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		8370898529793B330010E4B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		83E591CE2977F1D5003C64CE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		83E591CF2977F1D5003C64CE /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
 		83E591D02977F1D5003C64CE /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8370898629793B330010E4B2 /* QuartzCore.framework in Frameworks */,
 				2AA05B313EEDC59803610B2B /* Pods_Guryihii.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +98,7 @@
 		591A238FC5DF9E074D9F06CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8370898529793B330010E4B2 /* QuartzCore.framework */,
 				1396944936B488F643FF201F /* Pods_Guryihii.framework */,
 			);
 			name = Frameworks;
@@ -151,6 +159,8 @@
 		834F06D7296802A4008DECC5 /* Guryihii */ = {
 			isa = PBXGroup;
 			children = (
+				8370898329793A9B0010E4B2 /* iCarousel.h */,
+				8370898229793A9B0010E4B2 /* iCarousel.m */,
 				83E591CD2977F13D003C64CE /* fonts */,
 				832CF1112975825E004B4A40 /* model */,
 				832CF11029758239004B4A40 /* view */,
@@ -161,6 +171,7 @@
 				834F06E3296802A6008DECC5 /* LaunchScreen.storyboard */,
 				834F06E6296802A6008DECC5 /* Info.plist */,
 				83275FC12976CCE400906E5B /* Constants.swift */,
+				8370898129793A9A0010E4B2 /* Guryihii-Bridging-Header.h */,
 			);
 			path = Guryihii;
 			sourceTree = "<group>";
@@ -226,6 +237,7 @@
 				TargetAttributes = {
 					834F06D4296802A4008DECC5 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -325,6 +337,7 @@
 				833478D1297851490067A80F /* PropertyDetailsViewController.swift in Sources */,
 				831A0B7A29756855009C7A69 /* NewProjectsViewController.swift in Sources */,
 				83275FC02976CBE700906E5B /* PropertyManager.swift in Sources */,
+				8370898429793A9B0010E4B2 /* iCarousel.m in Sources */,
 				831A0B7E29756887009C7A69 /* ProfilesViewController.swift in Sources */,
 				834F06D9296802A4008DECC5 /* AppDelegate.swift in Sources */,
 				831A0B7C29756870009C7A69 /* AgentsViewController.swift in Sources */,
@@ -478,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C9J9FN2H22;
@@ -496,6 +510,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guryihii.Guryihii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guryihii/Guryihii-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -507,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C9J9FN2H22;
@@ -525,6 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guryihii.Guryihii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guryihii/Guryihii-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -58,7 +58,7 @@
                                 </buttonConfiguration>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="ColorOnSecondary"/>
                         <color key="tintColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="330" id="3SU-Oc-swc"/>
@@ -86,6 +86,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" name="BackgroundColor"/>
+            <color key="tintColor" name="ColorOnSecondary"/>
             <connections>
                 <outlet property="coverPhotoImageView" destination="SxJ-QP-92P" id="jSq-uK-WAO"/>
                 <outlet property="priceLabel" destination="2YK-uG-szf" id="68U-Mu-9Vy"/>
@@ -102,6 +103,9 @@
         </namedColor>
         <namedColor name="BackgroundColor">
             <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorOnSecondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
