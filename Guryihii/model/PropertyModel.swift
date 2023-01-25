@@ -16,4 +16,8 @@ struct PropertyModel: Codable {
     let property_type: String
     let price: String
     let slug: String
+    let photo1: String
+    let photo2: String
+    let photo3: String
+    let photo4: String
 }

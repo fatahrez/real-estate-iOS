@@ -8,73 +8,55 @@
 import Foundation
 import UIKit
 
-class PropertyDetailsViewController : UIViewController, iCarouselDataSource,
-                                      iCarouselDelegate{
+class PropertyDetailsViewController : UIViewController {
     
-    @IBOutlet weak var propertyImageSlideView: iCarousel!
+    @IBOutlet weak var propertyImagesCollectionView: UICollectionView!
     @IBOutlet weak var slugLabel: UILabel!
     
     var propertyDetailManager = PropertyDetailManager()
     var slug: String?
     var property: PropertyModel?
-    var images = [UIImage]()
+    var images: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         propertyDetailManager.delegate = self
         propertyDetailManager.fetchPropertyDetails(with: slug ?? "")
-        slugLabel.text = slug
-    
-        images.append(UIImage(named: "house_placeholder")!)
         
-        propertyImageSlideView.layer.cornerRadius = 10
+        propertyImagesCollectionView.dataSource = self
         
-        propertyImageSlideView.reloadData()
-        propertyImageSlideView.type = .timeMachine
+        let layout = propertyImagesCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+//        layout.minimumLineSpacing = 1
+//        layout.minimumInteritemSpacing = 1
+//
+//        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
     }
     
-    func numberOfItems(in carousel: iCarousel) -> Int {
-        return images.count
-    }
-    
-    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
-        print(images)
-        let tempView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 250))
-        
-        let frame = CGRect(x: 0, y: 0, width: 200, height: 250)
-        let imageView = UIImageView()
-        imageView.frame = frame
-        imageView.contentMode = .scaleAspectFit
-        
-        imageView.image = images[index]
-        
-        return tempView
-    }
-    
-    func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
-        if option == iCarouselOption.spacing {
-            print(value)
-            return value * 1.2
-        }
-        return value
-    }
 }
 
 extension PropertyDetailsViewController : PropertyDetailManagerDelegate {
     
     func didGetPropertyDetails(_ propertyDetailManager: PropertyDetailManager, _ property: PropertyModel) {
         
-        DispatchQueue.global(qos: .background).async {
-            do {
-                let data = try Data.init(contentsOf: URL.init(string: K.baseURLWithoutAPI+property.cover_photo)!)
-                DispatchQueue.main.async {
-                    let image: UIImage = UIImage(data: data)!
-                    self.images.append(image)
-                }
-            } catch {
-                print(error)
+        DispatchQueue.main.async {
+            if !property.cover_photo.isEmpty {
+                self.images.append(property.cover_photo)
             }
+            if !property.photo1.isEmpty {
+                self.images.append(property.photo1)
+            }
+            if !property.photo2.isEmpty {
+                self.images.append(property.photo2)
+            }
+            if !property.photo3.isEmpty {
+                self.images.append(property.photo3)
+            }
+            if !property.photo4.isEmpty {
+                self.images.append(property.photo4)
+            }
+            self.propertyImagesCollectionView.reloadData()
         }
     }
     
@@ -82,5 +64,26 @@ extension PropertyDetailsViewController : PropertyDetailManagerDelegate {
         print(error)
     }
     
-    
 }
+
+
+extension PropertyDetailsViewController : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView
+            .dequeueReusableCell(withReuseIdentifier: "SlideShowCollectionViewCell", for: indexPath)
+        as! SlideShowCollectionViewCell
+        cell.populate(with: self.images[indexPath.row])
+        return cell
+    }
+}
+
+
+//extension PropertyDetailsViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: <#T##Double#>, height: <#T##Double#>)
+//    }
+//}

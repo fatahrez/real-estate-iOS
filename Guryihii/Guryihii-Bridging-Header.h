@@ -1,5 +1,8 @@
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
+//  Guryihii-Brdiging-header.m
+//  Guryihii
+//
+//  Created by Abdulfatah Mohamed on 24/01/2023.
 //
 
-#import "iCarousel.h"
+#import <Foundation/Foundation.h>
