@@ -14,4 +14,5 @@ struct K {
     static let propertyCellIdentifier = "PropertyCell"
     static let propertyCellNibName = "PropertyTableViewCell"
     static let propertyDetailsSegue = "PropertiesToPropertyDetails"
+    static let newProjectsToPropertyDetailsSegue = "NewProjectsToPropertyDetails"
 }

@@ -341,7 +341,7 @@
             </objects>
             <point key="canvasLocation" x="-2187.0229007633588" y="-485.21126760563385"/>
         </scene>
-        <!--New Projects-->
+        <!--New Projects View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="NewProjectsViewController" customModule="Guryihii" customModuleProvider="target" sceneMemberID="viewController">
@@ -350,8 +350,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jvx-Kk-YVm">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <color key="sectionIndexBackgroundColor" name="BackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -363,11 +365,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jvx-Kk-YVm" secondAttribute="bottom" id="zxQ-Sb-WcB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New Projects" image="crane" id="ugK-GQ-57r"/>
+                    <navigationItem key="navigationItem" id="dHY-Mt-C3W"/>
+                    <connections>
+                        <outlet property="newProjectsTableView" destination="jvx-Kk-YVm" id="O34-M2-OfF"/>
+                        <segue destination="D6e-Pt-T6W" kind="show" identifier="NewProjectsToPropertyDetails" id="FXO-6G-W6s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-686" y="-1915"/>
+            <point key="canvasLocation" x="-686" y="-1227"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Yk-bV-HWu">
@@ -381,7 +387,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="IO5-1y-09x" kind="relationship" relationship="viewControllers" id="jaI-bv-YqM"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xFi-T4-EsB"/>
+                        <segue destination="IbU-pm-mGo" kind="relationship" relationship="viewControllers" id="xFi-T4-EsB"/>
                         <segue destination="xsF-9h-7bQ" kind="relationship" relationship="viewControllers" id="1TD-Ra-z6A"/>
                         <segue destination="anf-Qh-uEJ" kind="relationship" relationship="viewControllers" id="APk-rB-Gg1"/>
                         <segue destination="0oL-Ld-Diq" kind="relationship" relationship="viewControllers" id="Xfd-oS-ry6"/>
@@ -418,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CA-XG-aaV" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353.43511450381681" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="1280.1526717557251" y="-1942.2535211267607"/>
         </scene>
         <!--Profile-->
         <scene sceneID="vEH-9E-8Pn">
@@ -447,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GX6-WM-WAU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002.2900763358779" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="1929.0076335877861" y="-1942.2535211267607"/>
         </scene>
         <!--Menu-->
         <scene sceneID="Qho-jY-v8s">
@@ -476,7 +482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uh5-do-cyG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1640.4580152671756" y="-1942.2535211267607"/>
+            <point key="canvasLocation" x="2567.1755725190837" y="-1942.2535211267607"/>
         </scene>
         <!--Properties-->
         <scene sceneID="mjY-7Z-C8H">
@@ -497,7 +503,29 @@
             </objects>
             <point key="canvasLocation" x="-2187.0229007633588" y="-1942.2535211267607"/>
         </scene>
+        <!--New Projects-->
+        <scene sceneID="PFS-Ah-iaD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IbU-pm-mGo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="New Projects" image="crane" id="ugK-GQ-57r"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kct-Ej-MtO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jq3-a1-wMO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSI-A1-pSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686.25954198473278" y="-1942.2535211267607"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FXO-6G-W6s"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="agents" width="18.666666030883789" height="18.666666030883789"/>
         <image name="bathrooms" width="12.333333015441895" height="12.333333015441895"/>
@@ -520,9 +548,6 @@
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
