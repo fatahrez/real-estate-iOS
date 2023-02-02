@@ -14,7 +14,6 @@ class NewProjectsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        newProjectsLabel.text = "New Projects VC"
     }
     
 
