@@ -16,6 +16,11 @@ struct PropertyModel: Codable {
     let property_type: String
     let price: String
     let slug: String
+    let description: String
+    let country: String
+    let plot_area: String
+    let bathrooms: String
+    let total_floors: Int
     let photo1: String
     let photo2: String
     let photo3: String

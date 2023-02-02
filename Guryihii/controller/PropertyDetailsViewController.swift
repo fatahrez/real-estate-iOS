@@ -7,11 +7,22 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class PropertyDetailsViewController : UIViewController {
     
     @IBOutlet weak var propertyImagesCollectionView: UICollectionView!
-    @IBOutlet weak var slugLabel: UILabel!
+    @IBOutlet weak var propertyNameLabel: UILabel!
+    @IBOutlet weak var streetAddressLabel: UILabel!
+    @IBOutlet weak var cityCountryLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var bedroomLabel: UILabel!
+    @IBOutlet weak var bathroomLabel: UILabel!
+    @IBOutlet weak var totalFloorsLabel: UILabel!
+    @IBOutlet weak var plotAreaLabel: UILabel!
+    @IBOutlet weak var propertyDescriptionLabell: UITextView!
+    @IBOutlet weak var locationMapView: MKMapView!
+    
     
     var propertyDetailManager = PropertyDetailManager()
     var slug: String?
@@ -57,6 +68,15 @@ extension PropertyDetailsViewController : PropertyDetailManagerDelegate {
                 self.images.append(property.photo4)
             }
             self.propertyImagesCollectionView.reloadData()
+            self.propertyNameLabel.text = property.title
+            self.streetAddressLabel.text = property.street_address
+            self.cityCountryLabel.text = "\(property.city), \(property.country)"
+            self.priceLabel.text = "$\(property.price)"
+            self.bedroomLabel.text = "\(property.bedrooms) bed"
+            self.bathroomLabel.text = "\(property.bathrooms)bath"
+            self.totalFloorsLabel.text = "\(property.total_floors) flr"
+            self.plotAreaLabel.text = "\(property.plot_area)m"
+            self.propertyDescriptionLabell.text = property.description
         }
     }
     
