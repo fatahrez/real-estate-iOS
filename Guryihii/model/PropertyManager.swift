@@ -37,13 +37,11 @@ struct PropertyManager {
     func parseJson(_ propertyData: Data) -> [PropertyModel]? {
         let decorder = JSONDecoder()
         do {
-            let decodedData = try decorder.decode(PropertyData.self, from: propertyData)
-            let properties = decodedData.results
-            
-            return properties
+            let decodedData = try decorder.decode([PropertyModel].self, from: propertyData)
+            return decodedData
         } catch {
             delegate?.didFailWith(error: error)
-            return nil
+                return nil
         }
     }
 }
